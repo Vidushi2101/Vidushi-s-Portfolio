@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: -7px;
+            padding: 8px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #131212; */
+            background-image: url(pics/vvv.jpg);
+            color: #e5e911;
+            line-height: 1.6;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            /* background : url(pics/hi.jpg) */
+             background-color: indigo; 
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            color: rgb(241, 27, 91);
+            font-size: 1.01rem;
+        }
+
+
+        header {
+            background-color: #c02c8f;
+            color: rgb(27, 26, 26);
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project-box {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-box:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #021d38;
+        }
+
+        p {
+            margin-top: 10px;
+            color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+      
+        <div class="right">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/past.html">Past Experience</a></li>
+                <li><a href="/achievments.html">Achievments</a></li>
+                <li><a href="/projects.html">Project</a></li>
+                <li><a href="/aboutme.html">Profiles</a></li>
+                <li><a href="/contactme.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+
+    <main>
+        <div class="project-box">
+            <h2>Tata Consultancy Services</h2>
+            <p>Created web page on clinical depositaries,Designed the front end of website using HTML, Javascript,CSS
+            </p>
+        </div>
+
+        <div class="project-box">
+            <h2>Snake Xenzia</h2>
+            <p>Classic arcade fun game.Control the snake, eat food, avoid collisions. Simple yet addictive gaming
+                experience.</p>
+        </div>
+
+        <div class="project-box">
+            <h2>Human Sensor Robot</h2>
+            <p>A human sensor robot detects and responds to human presence using advanced sensors, enhancing automation
+                and interaction capabilities.</p>
+        </div>
+
+        <div class="project-box">
+            <h2>IEEE</h2>
+            <p>Member of Research and Development team. Conducting cutting-edge research, developing innovative
+                technologies, and contributing to advancements</p>
+        </div>
+
+        <div class="project-box">
+            <h2>Grievance Handling System</h2>
+            <p>
+                A website, crafted with Python and Java, streamlines grievance handling, ensuring efficient complaint
+                resolution and user satisfaction.</p>
+        </div>
+
+        <div class="project-box">
+            <h2>Scientific Calculator</h2>
+            <p>Scientific calculator with advanced functions, user-friendly interface. Enables complex calculations,
+                trigonometry, and mathematical operations..</p>
+        </div>
+
+        <!-- Add more project boxes as needed -->
+
+    </main>
+
+
+</body>
+
+</html>

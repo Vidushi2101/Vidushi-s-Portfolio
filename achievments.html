@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements and Awards</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(pics/oo.jpg);
+            color: #e6da36;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: indigo;
+            padding: 0 20px; /* Adjusted padding for better spacing */
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo:hover {
+            color: #fff; /* Change color on hover if needed */
+        }
+
+        .menu-icon {
+            display: none; /* Hide by default for larger screens */
+            cursor: pointer;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            color: rgb(241, 27, 91);
+            font-size: 1.01rem;
+        }
+
+        header {
+            background-color: #491847;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .achievement-card {
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            max-width: 400px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .achievement-card:hover {
+            transform: scale(1.05);
+        }
+
+        .achievement-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #343a40;
+        }
+
+        .achievement-description {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        /* Media query for screens with a maximum width of 600px (typical mobile screens) */
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                display: none; /* Hide the regular navigation on small screens */
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                background-color: indigo;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .menu-icon {
+                display: block; /* Show the menu icon on small screens */
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- <a href="/" class="logo">Your Logo</a> -->
+        <div class="menu-icon">&#9776;</div>
+        <div class="right">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/past.html">Past Experience</a></li>
+                <li><a href="/achievments.html">Achievments</a></li>
+                <li><a href="/projects.html">Project</a></li>
+                <li><a href="/aboutme.html">Profiles</a></li>
+                <li><a href="/contactme.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Achievements Showcase</h1>
+    </header>
+
+    <section>
+        <div class="achievement-card">
+            <h2 class="achievement-title">Zonal level Throwball player</h2>
+            <p class="achievement-description">Player with precision throws, strategic gameplay, and exceptional
+                teamwork. Passionate about the sport, determined to excel further</p>
+        </div>
+
+        <div class="achievement-card">
+            <h2 class="achievement-title">Academics</h2>
+            <p class="achievement-description">Achieved academic excellence in Class 12 with a remarkable 97.3%.
+                Demonstrated commitment, diligence, and excellence in diverse subjects</p>
+        </div>
+
+        <div class="achievement-card">
+            <h2 class="achievement-title">Game Developer</h2>
+            <p class="achievement-description">Developed games using C and C++. Designs immersive gameplay, optimizes
+                code, and creates engaging user experiences. </p>
+        </div>
+
+        <div class="achievement-card">
+            <h2 class="achievement-title">SRM Alexa Developer</h2>
+            <p class="achievement-description">Anchored GIT101 event of Alexa sponsored by NCS soft solution Private
+                Limited</p>
+        </div>
+
+        <div class="achievement-card">
+            <h2 class="achievement-title">Technical Workshops</h2>
+            <p class="achievement-description">Attended workshop of Alexa , Microsoft,Google, Cherry Network and many
+                more</p>
+        </div>
+
+        <div class="achievement-card">
+            <h2 class="achievement-title">Anchoring</h2>
+            <p class="achievement-description">Hosted Swach Bharat Event in Vijaywada 2021 and got appreciation</p>
+        </div>
+
+        <!-- Add more achievement cards as needed -->
+
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navUl = document.querySelector('nav ul');
+
+            menuIcon.addEventListener('click', function () {
+                navUl.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

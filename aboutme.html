@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Links</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: url(pics/sh.jpg) center/cover no-repeat;
+            color: darkgreen;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            /* background : url(pics/hi.jpg) */
+            background-color: indigo;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            position: fixed;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            color: rgb(241, 27, 91);
+            font-size: 1.01rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-links a:hover {
+            color: #ffcc00;
+            /* Change to your preferred hover color */
+        }
+        @media only screen and (max-width: 600px) {
+    body {
+        padding: 20px; /* Add padding to the body for smaller screens */
+    }
+
+    nav {
+        flex-direction: column; /* Change to a vertical layout for smaller screens */
+        height: auto; /* Remove fixed height for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Change to a vertical layout for smaller screens */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add some vertical spacing between navigation items */
+    }
+
+    .social-links {
+        flex-direction: column; /* Change to a vertical layout for smaller screens */
+        margin-top: 15px; /* Adjust margin for smaller screens */
+    }
+
+    .social-links a {
+        margin: 0 0 10px; /* Add some vertical spacing between social links */
+    }
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <div class="right">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/past.html">Past Experience</a></li>
+                <li><a href="/achievments.html">Achievments</a></li>
+                <li><a href="/projects.html">Project</a></li>
+                <li><a href="/aboutme.html">Profiles</a></li>
+                <li><a href="/contactme.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Connect with Me</h1>
+    <p>Stay updated and connect with me through my Profiles</p>
+
+    <div class="social-links">
+        <!-- Replace the '#' with your actual social media profile links -->
+        <a href="https://github.com/Vidushi2101#" target="_blank" title="GITHUB"><img src="pics/gt.png"></a>
+        <a href="https://www.linkedin.com/in/vidushi-vani-66b189248#" target="_blank" title="LINKEDLN"><img
+                src="pics/ll.png" alt=""></a>
+        <a href="pics/Vidushi Vani .pdf" target="_blank" title="RESUME"><img src="pics/rr.png" alt=""></a>
+
+</body>
+
+<!-- Add more social media links as needed -->
+</div>
+</body>
+
+</html>
